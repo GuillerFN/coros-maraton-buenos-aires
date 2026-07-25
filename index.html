@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f3ef">
+    <meta name="description" content="Proposta de parceria para a Maratona de Tóquio.">
+    <title>Proposta de Projeto</title>
+    <link rel="stylesheet" href="css/style.css?v=5">
+</head>
+<body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+    <header class="site-header">
+        <a class="site-logo" href="#inicio" aria-label="Voltar ao início">project_proposal<span>®</span></a>
+
+        <nav class="navigation" aria-label="Navegação principal">
+            <a href="#projeto">Projeto</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#asics">ASICS</a>
+            <a href="#plano">Conteúdo</a>
+            <a href="#parceria">Parceria</a>
+        </nav>
+
+        <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false">
+            <span></span><span></span>
+        </button>
+    </header>
+
+    <div class="mobile-menu" aria-hidden="true">
+        <a href="#projeto">Projeto</a>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#asics">ASICS</a>
+        <a href="#plano">Conteúdo</a>
+        <a href="#parceria">Parceria</a>
+        <a href="#contato">Vamos juntos</a>
+    </div>
+
+    <main id="conteudo">
+        <section class="hero" id="inicio">
+            <picture class="hero__media">
+                <source media="(max-width: 620px)" srcset="assets/images/capa-celular.jpg">
+                <img
+                    class="hero__image"
+                    src="assets/images/capa.jpg"
+                    alt="Guilherme Nishiyama — projeto Maratona de Tóquio"
+                    data-image="hero"
+                >
+            </picture>
+            <div class="hero__overlay"></div>
+
+            <div class="hero__topline">
+                <p data-text="hero.etiqueta"></p>
+                <p data-text="hero.identificador"></p>
+            </div>
+
+            <div class="hero__title">
+                <h1><span data-text="hero.tituloLinha1"></span><em data-text="hero.tituloDestaque"></em></h1>
+                <p data-text="hero.subtitulo"></p>
+            </div>
+
+            <div class="hero__footer">
+                <div><span>EVENTO</span><strong data-text="hero.evento"></strong></div>
+                <div><span>CRIADOR</span><strong data-text="hero.criador"></strong></div>
+                <div><span>PROPOSTA PARA</span><strong data-text="configuracao.marca"></strong></div>
+            </div>
+        </section>
+
+        <div id="secoes-dinamicas"></div>
+    </main>
+
+    <footer class="footer">
+        <a class="site-logo site-logo--footer" href="#inicio">project_proposal<span>®</span></a>
+        <p id="footer-copy"></p>
+        <a href="#inicio">Voltar ao topo ↑</a>
+    </footer>
+
+    <script src="js/conteudo.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
