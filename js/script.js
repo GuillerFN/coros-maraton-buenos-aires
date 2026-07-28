@@ -607,18 +607,30 @@
             return "";
         }
 
-        const inclui = Array.isArray(
-            data.parceria.inclui
+        const resumo = Array.isArray(
+            data.parceria.resumo
         )
-            ? data.parceria.inclui
-                  .map(
-                      (item) => `
-                        <li>
-                            ${escapeHTML(item)}
-                        </li>
+            ? data.parceria.resumo
+                .map(
+                    (item) => `
+                        <article class="partnership-summary-item">
+                            <strong>
+                                ${escapeHTML(item.valor)}
+                            </strong>
+
+                            <div>
+                                <h3>
+                                    ${escapeHTML(item.titulo)}
+                                </h3>
+
+                                <p>
+                                    ${escapeHTML(item.texto)}
+                                </p>
+                            </div>
+                        </article>
                     `
-                  )
-                  .join("")
+                )
+                .join("")
             : "";
 
         return `
@@ -636,26 +648,42 @@
                     <div class="investment-main">
                         <p>
                             ${escapeHTML(
-                                data.parceria
-                                    .chamada
+                                data.parceria.chamada
                             )}
                         </p>
 
                         <strong>
                             ${escapeHTML(
-                                data.parceria
-                                    .valor
+                                data.parceria.valor
                             )}
                         </strong>
+                    </div>
 
-                        <span>
+                    <div class="partnership-summary">
+                        <p class="partnership-summary-title">
                             ${escapeHTML(
-                                data.parceria
-                                    .apoioEsperado
+                                data.parceria.resumoTitulo ||
+                                    "ENTREGAS DO PROJETO"
                             )}
-                        </span>
+                        </p>
+
+                        <div class="partnership-summary-list">
+                            ${resumo}
+                        </div>
                     </div>
                 </div>
+
+                ${
+                    data.parceria.observacao
+                        ? `
+                            <p class="partnership-note">
+                                ${escapeHTML(
+                                    data.parceria.observacao
+                                )}
+                            </p>
+                        `
+                        : ""
+                }
             </section>
         `;
     };
