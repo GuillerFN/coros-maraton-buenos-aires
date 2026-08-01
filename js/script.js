@@ -281,27 +281,27 @@
 
     /*
     =====================================================
-    03 — ASICS
+    03 — GATORADE
     O LOGO APARECE SOMENTE NO TÍTULO PRINCIPAL
     =====================================================
     */
 
-    const asics = () => {
-        if (!data.asics) {
+    const gatorade = () => {
+        if (!data.gatorade) {
             return "";
         }
 
         const pilares = Array.isArray(
-            data.asics.pilares
+            data.gatorade.pilares
         )
-            ? data.asics.pilares
+            ? data.gatorade.pilares
                   .map((item, index) => {
                       const beneficio =
                           Array.isArray(
-                              data.asics
+                              data.gatorade
                                   .beneficios
                           )
-                              ? data.asics
+                              ? data.gatorade
                                     .beneficios[
                                     index
                                 ]
@@ -358,19 +358,29 @@
 
         return `
             <section
-                class="section section--blue section--panel brand-section"
-                id="asics"
+                class="section section--blue section--panel brand-section brand-section--gatorade"
+                id="gatorade"
             >
                 <div class="brand-section-heading">
                     <p class="brand-section-heading__meta">
                         <span>03</span>
-                        ASICS
+                        ${escapeHTML(
+                            data.configuracao?.marca ||
+                                "GATORADE"
+                        )}
                     </p>
 
                     <h2 class="brand-section-title">
                         <img
-                            src="assets/logos/logo-asics.png"
-                            alt="ASICS"
+                            src="${escapeHTML(
+                                data.configuracao
+                                    ?.logoMarca ||
+                                    "assets/logos/logo-gatorade.png"
+                            )}"
+                            alt="${escapeHTML(
+                                data.configuracao?.marca ||
+                                    "Gatorade"
+                            )}"
                         >
                         <span>x Projeto</span>
                     </h2>
@@ -378,7 +388,7 @@
 
                 <p class="brand-intro">
                     ${escapeHTML(
-                        data.asics.introducao
+                        data.gatorade.introducao
                     )}
                 </p>
 
@@ -611,26 +621,32 @@
             data.parceria.resumo
         )
             ? data.parceria.resumo
-                .map(
-                    (item) => `
+                  .map(
+                      (item) => `
                         <article class="partnership-summary-item">
                             <strong>
-                                ${escapeHTML(item.valor)}
+                                ${escapeHTML(
+                                    item.valor
+                                )}
                             </strong>
 
                             <div>
                                 <h3>
-                                    ${escapeHTML(item.titulo)}
+                                    ${escapeHTML(
+                                        item.titulo
+                                    )}
                                 </h3>
 
                                 <p>
-                                    ${escapeHTML(item.texto)}
+                                    ${escapeHTML(
+                                        item.texto
+                                    )}
                                 </p>
                             </div>
                         </article>
                     `
-                )
-                .join("")
+                  )
+                  .join("")
             : "";
 
         return `
@@ -662,7 +678,8 @@
                     <div class="partnership-summary">
                         <p class="partnership-summary-title">
                             ${escapeHTML(
-                                data.parceria.resumoTitulo ||
+                                data.parceria
+                                    .resumoTitulo ||
                                     "ENTREGAS DO PROJETO"
                             )}
                         </p>
@@ -678,7 +695,8 @@
                         ? `
                             <p class="partnership-note">
                                 ${escapeHTML(
-                                    data.parceria.observacao
+                                    data.parceria
+                                        .observacao
                                 )}
                             </p>
                         `
@@ -706,17 +724,48 @@
             data.configuracao
                 ?.instagramUrl || "#";
 
+        const assunto = [
+            "Projeto",
+            data.hero?.evento ||
+                "Maratona de Buenos Aires",
+            data.configuracao?.marca ||
+                "Gatorade"
+        ].join(" · ");
+
+        const etiquetaCompleta =
+            data.encerramento?.etiqueta ||
+            "06 · VAMOS JUNTOS";
+
+        const partesEtiqueta =
+            etiquetaCompleta.split("·");
+
+        const numeroEtiqueta =
+            partesEtiqueta[0]?.trim() || "06";
+
+        const textoEtiqueta =
+            partesEtiqueta
+                .slice(1)
+                .join("·")
+                .trim() || "VAMOS JUNTOS";
+
         return `
             <section
                 class="closing section--panel"
                 id="contato"
             >
-                <p>
-                    ${escapeHTML(
-                        data.encerramento
-                            .etiqueta
-                    )}
-                </p>
+                <div class="closing-meta">
+                    <span>
+                        ${escapeHTML(
+                            numeroEtiqueta
+                        )}
+                    </span>
+
+                    <p>
+                        ${escapeHTML(
+                            textoEtiqueta
+                        )}
+                    </p>
+                </div>
 
                 <h2>
                     ${escapeHTML(
@@ -746,7 +795,7 @@
                             href="mailto:${escapeHTML(
                                 email
                             )}?subject=${encodeURIComponent(
-                                "Projeto Maratona de Tóquio"
+                                assunto
                             )}"
                         >
                             ${escapeHTML(
@@ -789,12 +838,37 @@
         dynamicSections.innerHTML = [
             projeto(),
             sobre(),
-            asics(),
+            gatorade(),
             plano(),
             parceria(),
             encerramento()
         ].join("");
     }
+
+    /*
+    =====================================================
+    ATUALIZAÇÃO DE LINKS ANTIGOS DA ASICS
+    =====================================================
+    */
+
+    document
+        .querySelectorAll('a[href="#asics"]')
+        .forEach((link) => {
+            link.setAttribute(
+                "href",
+                "#gatorade"
+            );
+
+            if (
+                link.textContent
+                    .trim()
+                    .toUpperCase() ===
+                "ASICS"
+            ) {
+                link.textContent =
+                    "GATORADE";
+            }
+        });
 
     /*
     =====================================================
