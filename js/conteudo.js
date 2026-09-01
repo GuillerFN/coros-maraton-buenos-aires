@@ -11,19 +11,19 @@ EDITE SOMENTE ESTE ARQUIVO PARA ADAPTAR A PROPOSTA
 
 window.PROPOSTA = {
     configuracao: {
-        tituloPagina: "Guilherme Nishiyama | Proposta Gatorade · Maratona de Buenos Aires",
-        descricaoPagina: "Proposta de parceria entre Guilherme Nishiyama e Gatorade para a Maratona de Buenos Aires.",
-        marca: "Gatorade",
-        logoMarca: "assets/logos/logo-gatorade.png",
+        tituloPagina: "Guilherme Nishiyama | COROS · Maratona de Buenos Aires",
+        descricaoPagina: "Proposta de parceria entre Guilherme Nishiyama e COROS durante a preparação para a Maratona de Buenos Aires.",
+        marca: "COROS",
+        logoMarca: "assets/logos/logo-coros.png",
         instagramUrl: "https://www.instagram.com/guinishiyama/",
         email: "guinishiyama@outlook.com"
     },
 
     hero: {
-        etiqueta: "PROPOSTA DE PROJETO · GATORADE",
+        etiqueta: "PROPOSTA DE PROJETO · COROS",
         tituloLinha1: "Rumo à",
         tituloDestaque: "Buenos Aires.",
-        subtitulo: "Minha segunda maratona. Uma estratégia construída para buscar o RP.",
+        subtitulo: "Minha segunda maratona. Um ciclo de reconstrução de performance guiado por dados.",
         evento: "MARATONA DE BUENOS AIRES",
         criador: "GUILHERME NISHIYAMA",
         identificador: "BUENOS AIRES / 42.195",
@@ -34,11 +34,11 @@ window.PROPOSTA = {
         titulo: "A missão",
 
         texto: [
-            "Esta será minha segunda maratona e mais um passo importante na minha trajetória no esporte. Desde que comecei a correr, evoluir na distância e construir uma história consistente dentro das maratonas se tornou um dos principais objetivos que tracei.",
+            "Esta será minha segunda maratona, mas o caminho até Buenos Aires começou de uma forma diferente do que eu imaginava. Depois de uma lesão que me deixou cerca de quatro meses sem correr, voltei aos treinos recuperado, mas ainda reconstruindo o condicionamento e a capacidade de correr como antes.",
 
-            "Na minha primeira maratona, enfrentei dificuldades durante a prova. Consegui concluir, mas não da forma que esperava. Em Buenos Aires, quero aplicar tudo o que aprendi e construir uma execução mais consistente, cuidando do treinamento, da estratégia de ritmo, da hidratação e da reposição ao longo dos 42,195 km.",
+            "Desde que retornei, minha frequência cardíaca ainda não responde da mesma forma que antes da pausa. Esse processo passou a fazer parte dos meus conteúdos de rotina: tenho acompanhado de perto as métricas dos treinos e usado essas informações, junto com meu treinador, para entender quando é hora de avançar, aumentar a intensidade ou ainda respeitar mais uma etapa da recuperação.",
 
-            "O projeto documentará toda essa jornada: preparação, testes nos longões, viagem, Expo, prova e pós-prova. Cada etapa será transformada em conteúdo relevante e autêntico, mostrando como uma grande meta é construída por meio de disciplina, aprendizado e decisões aplicadas à performance."
+            "Buenos Aires transforma esse processo em uma jornada completa. Tenho uma maratona pela frente, longões, treinos desafiadores e uma evolução que pode ser acompanhada por dados. Mais do que mostrar o resultado final, o projeto documentará como a performance é reconstruída ao longo do caminho."
         ],
 
         dados: [
@@ -55,8 +55,8 @@ window.PROPOSTA = {
                 valor: "2ª maratona"
             },
             {
-                rotulo: "OBJETIVO",
-                valor: "Novo recorde pessoal"
+                rotulo: "MOMENTO",
+                valor: "Retorno pós-lesão"
             }
         ]
     },
@@ -64,30 +64,30 @@ window.PROPOSTA = {
     sobre: {
         titulo: "Guilherme Nishiyama",
 
-        destaque: "Criador de conteúdo e corredor amador em busca de evolução constante",
+        destaque: "Criador de conteúdo, corredor amador e parceiro COROS",
 
-        texto: "Compartilho uma rotina real de treinos, trabalho, provas, produtos e evolução na corrida. Meu conteúdo acompanha o processo de perto e cria conversa com uma comunidade interessada em performance, consistência, hidratação e vida ativa.",
+        texto: "Compartilho uma rotina real de treinos, provas, evolução e desafios dentro da corrida. Nos últimos meses, meu conteúdo também passou a acompanhar de perto o retorno após uma lesão e a reconstrução do condicionamento, usando as métricas dos treinos como parte das decisões tomadas durante o processo.",
 
         foto: "assets/images/perfil.jpg",
 
         metricas: [
             {
-                valor: "3,2 mi",
+                valor: "3,4 mi",
                 rotulo: "Visualizações",
                 periodo: "Últimos 90 dias"
             },
             {
-                valor: "1,3 mi",
+                valor: "1,5 mi",
                 rotulo: "Contas alcançadas",
                 periodo: "Últimos 90 dias"
             },
             {
-                valor: "150 mil",
+                valor: "200 mil",
                 rotulo: "Interações",
                 periodo: "Últimos 90 dias"
             },
             {
-                valor: "9,4 mil",
+                valor: "9,7 mil",
                 rotulo: "Seguidores",
                 periodo: ""
             }
@@ -96,41 +96,41 @@ window.PROPOSTA = {
         observacao: "Atualizar os números antes de cada envio."
     },
 
-    gatorade: {
-        titulo: "Gatorade x Projeto",
+    coros: {
+        titulo: "COROS x Projeto",
 
-        introducao: "A parceria conecta ciência esportiva, hidratação e performance a uma jornada real de preparação para os 42,195 km. A Gatorade entra no projeto com uma função clara: acompanhar os testes, os aprendizados e a estratégia construída para a Maratona de Buenos Aires.",
+        introducao: "A parceria já faz parte da minha rotina de corrida. Para Buenos Aires, a oportunidade é aprofundar essa relação e transformar os dados que já acompanho diariamente em conteúdo sobre retorno, evolução e tomada de decisão ao longo de um ciclo real de maratona.",
 
         pilares: [
             {
                 numero: "01",
-                titulo: "Ciência aplicada à performance",
-                texto: "A preparação cria espaço para transformar hidratação e reposição em decisões reais de treino. Longões, ajustes de estratégia e preparação final permitem inserir informação de forma prática, responsável e conectada à experiência do corredor."
+                titulo: "Dados que ajudam a entender o processo",
+                texto: "Depois de meses sem correr, voltar a treinar não significa simplesmente retomar de onde parei. Frequência cardíaca, resposta aos estímulos e evolução dos treinos passaram a ser informações importantes para acompanhar como meu corpo está reagindo ao retorno."
             },
             {
                 numero: "02",
-                titulo: "Is It In You?",
-                texto: "Voltar para uma segunda maratona depois de uma experiência difícil representa disciplina, resiliência e vontade de evoluir. A busca pelo recorde pessoal transforma o projeto em uma história sobre descobrir o que existe dentro de cada atleta."
+                titulo: "Métrica com contexto",
+                texto: "Os números não aparecem isolados. Eles entram junto da percepção do treino e das decisões tomadas com meu treinador para avaliar progressão, intensidade e os próximos passos da preparação."
             },
             {
                 numero: "03",
-                titulo: "Estratégia testada no treino",
-                texto: "A presença do produto acontece ao longo do ciclo, dentro de longões, treinos-chave e preparação para a prova. Isso permite mostrar uso real, percepção pessoal e aprendizado antes da execução em Buenos Aires."
+                titulo: "Uma maratona para colocar tudo em prática",
+                texto: "Buenos Aires cria uma narrativa de longo prazo: retorno aos treinos, evolução da intensidade, longões, preparação específica e, por fim, 42,195 km para analisar toda essa construção através do ecossistema COROS."
             }
         ],
 
         beneficios: [
             {
-                titulo: "Conteúdo com função real",
-                texto: "A marca aparece ligada a situações concretas de hidratação, reposição e preparação."
+                titulo: "Produto dentro de uma necessidade real",
+                texto: "O monitor entra em uma conversa sobre frequência cardíaca e evolução que já existe naturalmente no meu conteúdo."
             },
             {
-                titulo: "Narrativa de superação",
-                texto: "A Gatorade participa de uma história sobre aprender com a primeira maratona e buscar uma execução melhor."
+                titulo: "Conteúdo com profundidade",
+                texto: "Mais do que mostrar o produto, a proposta permite contextualizar para que os dados estão sendo utilizados durante a preparação."
             },
             {
-                titulo: "Presença recorrente",
-                texto: "A parceria se desenvolve durante todo o ciclo, e não apenas em uma publicação ou no dia da prova."
+                titulo: "Continuidade da parceria",
+                texto: "A COROS permanece presente ao longo de toda a construção até Buenos Aires, reforçando uma relação que já existe com a marca."
             }
         ]
     },
@@ -138,84 +138,69 @@ window.PROPOSTA = {
     plano: {
         titulo: "Plano de conteúdo",
 
-        introducao: "Uma proposta-base de conteúdo para acompanhar a preparação e a experiência da Maratona de Buenos Aires, com possibilidade de ajuste conforme os objetivos, o orçamento e as prioridades da Gatorade.",
+        introducao: "Um escopo enxuto, construído para inserir o COROS Monitor Cardíaco naturalmente em uma história que já faz parte dos meus conteúdos: entender meu corpo e reconstruir minha performance até Buenos Aires.",
 
         planoDeConteudo: [
             {
                 numero: "01",
-                etapa: "ANTES",
-                titulo: "Preparação",
+                etapa: "ROTINA",
+                titulo: "Monitorando a evolução",
 
-                texto: "Conteúdos que apresentam o projeto e mostram como hidratação, reposição e estratégia fazem parte da preparação para os 42,195 km.",
+                texto: "O monitor passa a fazer parte dos conteúdos de rotina já publicados durante a preparação, aparecendo nos momentos em que frequência cardíaca, intensidade e evolução dos treinos forem relevantes para a narrativa.",
 
-                periodo: "PERÍODO DE PREPARAÇÃO",
+                periodo: "DURANTE O CICLO",
 
                 entregas: [
                     {
-                        formato: "REEL",
-                        titulo: "Anúncio do projeto",
-                        texto: "Anúncio oficial da participação na Maratona de Buenos Aires, apresentando a Gatorade como parceira da jornada."
-                    },
-                    {
-                        formato: "REEL",
-                        titulo: "Estratégia para os longões",
-                        texto: "Conteúdo mostrando como hidratação e reposição são testadas nos treinos mais importantes do ciclo."
+                        formato: "VÍDEOS",
+                        titulo: "Aparições na rotina de treinos",
+                        texto: "Inserções orgânicas do COROS Monitor Cardíaco em vídeos de rotina, longões, treinos de intensidade e conteúdos sobre a evolução da preparação."
                     },
                     {
                         formato: "STORIES",
-                        titulo: "Bastidores da preparação",
-                        texto: "Inserções espontâneas durante treinos, longões e momentos relevantes da preparação."
+                        titulo: "Métricas e bastidores",
+                        texto: "Aparições recorrentes do produto e compartilhamento de dados, percepções e bastidores dos treinos ao longo do ciclo."
                     }
                 ]
             },
 
             {
                 numero: "02",
-                etapa: "DURANTE",
-                titulo: "Experiência",
+                etapa: "CONTEÚDO DEDICADO",
+                titulo: "Treino sem x com monitor",
 
-                texto: "Cobertura dos principais momentos da viagem e da prova, conectando a preparação construída durante o ciclo à experiência em Buenos Aires.",
+                texto: "Um conteúdo específico para mostrar, na prática, como o uso do monitor muda a experiência de acompanhar a frequência cardíaca durante um treino.",
 
-                periodo: "SEMANA DA PROVA",
+                periodo: "DURANTE A PREPARAÇÃO",
 
                 entregas: [
                     {
                         formato: "REEL",
-                        titulo: "Dia da prova",
-                        texto: "Registro da experiência dos 42,195 km e da execução da estratégia construída durante a preparação."
-                    },
-                    {
-                        formato: "CARROSSEL",
-                        titulo: "As últimas 24 horas",
-                        texto: "Expo, retirada do kit, organização dos produtos, hidratação, alimentação e decisões que antecedem a largada."
-                    },
-                    {
-                        formato: "STORIES",
-                        titulo: "Cobertura em tempo real",
-                        texto: "Conteúdos espontâneos durante a viagem, pré-prova, prova e chegada."
+                        titulo: "Treino sem monitor x treino com monitor",
+                        texto: "Comparação entre dois treinos, observando o comportamento das leituras, a experiência de acompanhamento durante a atividade e como essas informações aparecem posteriormente na análise pelo app COROS."
                     }
                 ]
             },
 
             {
                 numero: "03",
-                etapa: "DEPOIS",
-                titulo: "Aprendizado",
+                etapa: "PÓS-MARATONA",
+                titulo: "Buenos Aires em dados",
 
-                texto: "Fechamento da jornada com uma análise honesta da experiência, dos aprendizados e da estratégia utilizada na segunda maratona.",
+                texto: "Depois dos 42,195 km, a jornada termina olhando para o que foi utilizado durante a preparação e para os dados que ajudam a contar a história completa do ciclo.",
 
                 periodo: "PÓS-PROVA",
 
                 entregas: [
                     {
                         formato: "REEL",
-                        titulo: "O que funcionou na estratégia",
-                        texto: "Análise honesta da preparação, do ritmo, da hidratação, da reposição e das decisões tomadas durante a maratona."
+                        titulo: "Os equipamentos COROS da minha maratona",
+                        texto: "Conteúdo mostrando os equipamentos COROS utilizados durante a preparação e a prova, junto de uma análise das principais métricas registradas no app COROS ao longo da jornada até Buenos Aires."
                     },
                     {
                         formato: "STORIES",
-                        titulo: "Repercussão e fechamento",
-                        texto: "Respostas à comunidade, impressões pós-prova e encerramento da parceria."
+                        titulo: "Resultados e métricas",
+                        texto: "Desdobramentos da prova, dados do aplicativo, percepção da experiência e fechamento da jornada."
                     }
                 ]
             }
@@ -223,47 +208,47 @@ window.PROPOSTA = {
     },
 
     parceria: {
-        titulo: "Uma proposta flexível",
+        titulo: "A parceria",
 
-        chamada: "Esta proposta apresenta um escopo-base para a participação da Gatorade no projeto da Maratona de Buenos Aires. O formato, a quantidade de entregas e o investimento podem ser ajustados de acordo com os objetivos, as prioridades e o orçamento disponível para a parceria.",
+        chamada: "Minha proposta é incluir o COROS Monitor Cardíaco como uma nova ferramenta dentro da preparação para Buenos Aires, integrando o produto a uma conversa sobre frequência cardíaca e evolução que já acontece de forma natural nos meus conteúdos.",
 
-        valor: "R$ 5.000,00",
+        valor: "COROS Monitor Cardíaco",
 
-        resumoTitulo: "Proposta-base",
+        resumoTitulo: "Entregas propostas",
 
         resumo: [
             {
-                valor: "04",
-                titulo: "Reels",
-                texto: "Anúncio do projeto, estratégia de preparação e experiência no dia da prova."
+                valor: "01",
+                titulo: "Reel dedicado",
+                texto: "Comparação prática entre um treino sem o monitor e outro utilizando o COROS Monitor Cardíaco."
             },
             {
                 valor: "01",
-                titulo: "Carrossel",
-                texto: "Conteúdo editorial com os dados, aprendizados e principais momentos da maratona."
+                titulo: "Reel pós-maratona",
+                texto: "Equipamentos COROS utilizados e principais métricas da jornada analisadas através do app COROS."
+            },
+            {
+                valor: "Rotina",
+                titulo: "Aparições orgânicas",
+                texto: "Presença do monitor nos conteúdos de treinos durante a preparação para Buenos Aires."
             },
             {
                 valor: "Stories",
-                titulo: "Cobertura recorrente",
-                texto: "Presença da marca durante a preparação, viagem, prova e pós-prova."
-            },
-            {
-                valor: "Flexível",
-                titulo: "Escopo negociável",
-                texto: "As entregas podem ser reduzidas, ampliadas ou reorganizadas conforme o formato de parceria definido com a marca."
+                titulo: "Acompanhamento do ciclo",
+                texto: "Produto, dados e percepções compartilhados ao longo da evolução dos treinos."
             }
         ],
 
-        observacao: "O valor apresentado é uma referência para o escopo-base e não representa uma condição fechada. A parceria também pode ser construída em formatos menores, incluindo apoio parcial à viagem, inscrição da prova, fornecimento de produtos ou uma combinação entre apoio financeiro e permuta. Direitos de uso, impulsionamento, exclusividade e condições finais serão definidos em conjunto."
+        observacao: "Este é um escopo-base pensado a partir do produto e da narrativa atual do projeto. Formatos, quantidade de entregas e ativações podem ser ajustados em conjunto de acordo com o que fizer mais sentido para a COROS."
     },
 
     encerramento: {
         etiqueta: "06 · VAMOS JUNTOS",
         tituloLinha1: "Nos vemos em",
         tituloDestaque: "Buenos Aires!",
-        texto: "Uma parceria para acompanhar cada etapa da preparação, transformar estratégia em conteúdo e chegar aos 42,195 km com a Gatorade presente em toda a jornada.",
+        texto: "Uma parceria para acompanhar não apenas os 42,195 km, mas todo o processo de voltar, evoluir e entender o que os dados contam ao longo do caminho.",
         botaoEmail: "Conversar sobre o projeto",
         botaoInstagram: "Abrir Instagram",
-        rodape: "Guilherme Nishiyama · Proposta Gatorade · 2026"
+        rodape: "Guilherme Nishiyama · COROS x Buenos Aires · 2026"
     }
 };
