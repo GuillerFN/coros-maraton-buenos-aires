@@ -2085,3 +2085,433 @@ button { font: inherit; }
         font-size: 0.74rem;
     }
 }
+
+/*
+=====================================================
+03 — COROS X PROJETO
+=====================================================
+*/
+
+.brand-section {
+    position: relative;
+    overflow: hidden;
+
+    padding:
+        clamp(84px, 9vw, 140px)
+        clamp(24px, 4vw, 72px);
+}
+
+.brand-section--coros {
+    background: #0b0b0b;
+    color: #ffffff;
+}
+
+.brand-section--coros .brand-section-heading,
+.brand-section--coros .brand-intro,
+.brand-section--coros .brand-grid {
+    position: relative;
+    z-index: 1;
+}
+
+
+/*
+=====================================================
+03 — COROS / CABEÇALHO
+=====================================================
+*/
+
+.brand-section-heading {
+    display: grid;
+
+    grid-template-columns:
+        minmax(280px, 420px)
+        1fr;
+
+    gap: clamp(28px, 4vw, 70px);
+
+    align-items: end;
+
+    margin-bottom:
+        clamp(42px, 5vw, 70px);
+}
+
+
+/*
+=====================================================
+03 — COROS / ETIQUETA
+=====================================================
+*/
+
+.brand-section-heading__meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin: 0 0 28px;
+
+    color: #ffffff;
+
+    font-size: 0.78rem;
+    font-weight: 600;
+    line-height: 1;
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.brand-section-heading__meta span {
+    display: block;
+
+    margin: 0;
+
+    color: #F8283B;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1;
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+
+/*
+=====================================================
+03 — COROS / TÍTULO
+=====================================================
+*/
+
+.brand-section-title {
+    display: flex;
+    align-items: center;
+
+    gap: clamp(18px, 2vw, 30px);
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size:
+        clamp(1rem, 2vw, 3rem);
+
+    font-weight: 400;
+    line-height: 0.95;
+
+    letter-spacing: -0.06em;
+}
+
+.brand-section-title img {
+    display: block;
+
+    width:
+        clamp(150px, 25vw, 300px);
+
+    height: auto;
+
+    object-fit: contain;
+}
+
+.brand-section-title span {
+    display: inline-block;
+
+    color: #ffffff;
+}
+
+
+/*
+=====================================================
+03 — COROS / INTRODUÇÃO
+=====================================================
+*/
+
+.brand-intro {
+    max-width: 880px;
+
+    margin:
+        0
+        0
+        clamp(42px, 5vw, 72px);
+
+    color:
+        rgba(255, 255, 255, 0.82);
+
+    font-size:
+        clamp(1.05rem, 1.25vw, 1.3rem);
+
+    line-height: 1.65;
+}
+
+
+/*
+=====================================================
+03 — COROS / PILARES
+=====================================================
+*/
+
+.brand-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 0;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.16);
+
+    border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.16);
+}
+
+.brand-grid article {
+    position: relative;
+
+    min-height: 100%;
+
+    padding:
+        clamp(36px, 4vw, 54px)
+        clamp(28px, 3vw, 42px);
+
+    background: transparent;
+
+    border: 0;
+}
+
+
+/*
+=====================================================
+03 — COROS / LINHAS ENTRE COLUNAS
+=====================================================
+*/
+
+.brand-grid article + article {
+    border-left:
+        1px solid
+        rgba(255, 255, 255, 0.14);
+}
+
+
+/*
+=====================================================
+03 — COROS / NÚMEROS DOS PILARES
+=====================================================
+*/
+
+.brand-grid article > span {
+    display: inline-block;
+
+    margin-bottom: 24px;
+
+    color: #F8283B;
+
+    font-size: 0.82rem;
+    font-weight: 700;
+
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+
+/*
+=====================================================
+03 — COROS / TÍTULO DOS PILARES
+=====================================================
+*/
+
+.brand-grid article h3 {
+    margin:
+        0
+        0
+        16px;
+
+    color: #ffffff;
+
+    font-size:
+        clamp(1.2rem, 1.5vw, 1.6rem);
+
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+
+/*
+=====================================================
+03 — COROS / TEXTO DOS PILARES
+=====================================================
+*/
+
+.brand-grid article > p {
+    margin: 0;
+
+    color:
+        rgba(255, 255, 255, 0.76);
+
+    font-size: 0.98rem;
+    line-height: 1.65;
+}
+
+
+/*
+=====================================================
+03 — COROS / VALOR PARA A MARCA
+=====================================================
+*/
+
+.pillar-outcome {
+    margin-top: 34px;
+
+    padding-top: 24px;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.16);
+}
+
+.pillar-outcome small {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #F8283B;
+
+    font-size: 0.68rem;
+    font-weight: 700;
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.pillar-outcome strong {
+    display: block;
+
+    margin:
+        0
+        0
+        10px;
+
+    color: #ffffff;
+
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.pillar-outcome p {
+    margin: 0;
+
+    color:
+        rgba(255, 255, 255, 0.72);
+
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+
+/*
+=====================================================
+03 — COROS / TABLET
+=====================================================
+*/
+
+@media (max-width: 1100px) {
+
+    .brand-section-heading {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .brand-grid {
+        grid-template-columns: 1fr;
+
+        border-top:
+            1px solid
+            rgba(255, 255, 255, 0.16);
+
+        border-bottom:
+            1px solid
+            rgba(255, 255, 255, 0.16);
+    }
+
+    .brand-grid article {
+        padding:
+            36px
+            0;
+
+        border-left: 0;
+    }
+
+    .brand-grid article + article {
+        border-left: 0;
+
+        border-top:
+            1px solid
+            rgba(255, 255, 255, 0.14);
+    }
+}
+
+
+/*
+=====================================================
+03 — COROS / MOBILE
+=====================================================
+*/
+
+@media (max-width: 900px) {
+
+    .brand-section {
+        padding:
+            76px
+            22px;
+    }
+
+    .brand-section-heading__meta {
+        gap: 10px;
+
+        margin-bottom: 24px;
+
+        font-size: 0.74rem;
+    }
+
+    .brand-section-heading__meta span {
+        font-size: 0.74rem;
+    }
+
+    .brand-section-title {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 14px;
+
+        font-size:
+            clamp(2.8rem, 13vw, 4.8rem);
+    }
+
+    .brand-section-title img {
+        width:
+            clamp(140px, 48vw, 220px);
+    }
+
+    .brand-intro {
+        font-size: 1rem;
+    }
+
+    .brand-grid article {
+        padding:
+            32px
+            0;
+    }
+
+    .brand-grid article h3 {
+        font-size: 1.2rem;
+    }
+
+    .pillar-outcome {
+        margin-top: 28px;
+        padding-top: 20px;
+    }
+}
