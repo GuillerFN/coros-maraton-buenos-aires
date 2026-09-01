@@ -281,27 +281,27 @@
 
     /*
     =====================================================
-    03 — GATORADE
+    03 — coros
     O LOGO APARECE SOMENTE NO TÍTULO PRINCIPAL
     =====================================================
     */
 
-    const gatorade = () => {
-        if (!data.gatorade) {
+    const coros = () => {
+        if (!data.coros) {
             return "";
         }
 
         const pilares = Array.isArray(
-            data.gatorade.pilares
+            data.coros.pilares
         )
-            ? data.gatorade.pilares
+            ? data.coros.pilares
                   .map((item, index) => {
                       const beneficio =
                           Array.isArray(
-                              data.gatorade
+                              data.coros
                                   .beneficios
                           )
-                              ? data.gatorade
+                              ? data.coros
                                     .beneficios[
                                     index
                                 ]
@@ -358,15 +358,15 @@
 
         return `
             <section
-                class="section section--blue section--panel brand-section brand-section--gatorade"
-                id="gatorade"
+                class="section section--blue section--panel brand-section brand-section--coros"
+                id="coros"
             >
                 <div class="brand-section-heading">
                     <p class="brand-section-heading__meta">
                         <span>03</span>
                         ${escapeHTML(
                             data.configuracao?.marca ||
-                                "GATORADE"
+                                "coros"
                         )}
                     </p>
 
@@ -375,11 +375,11 @@
                             src="${escapeHTML(
                                 data.configuracao
                                     ?.logoMarca ||
-                                    "assets/logos/logo-gatorade.png"
+                                    "assets/logos/logo-coros.png"
                             )}"
                             alt="${escapeHTML(
                                 data.configuracao?.marca ||
-                                    "Gatorade"
+                                    "coros"
                             )}"
                         >
                         <span>x Projeto</span>
@@ -388,7 +388,7 @@
 
                 <p class="brand-intro">
                     ${escapeHTML(
-                        data.gatorade.introducao
+                        data.coros.introducao
                     )}
                 </p>
 
@@ -729,7 +729,7 @@
             data.hero?.evento ||
                 "Maratona de Buenos Aires",
             data.configuracao?.marca ||
-                "Gatorade"
+                "coros"
         ].join(" · ");
 
         const etiquetaCompleta =
@@ -838,7 +838,7 @@
         dynamicSections.innerHTML = [
             projeto(),
             sobre(),
-            gatorade(),
+            coros(),
             plano(),
             parceria(),
             encerramento()
@@ -856,7 +856,7 @@
         .forEach((link) => {
             link.setAttribute(
                 "href",
-                "#gatorade"
+                "#coros"
             );
 
             if (
@@ -866,7 +866,7 @@
                 "ASICS"
             ) {
                 link.textContent =
-                    "GATORADE";
+                    "coros";
             }
         });
 
